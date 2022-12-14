@@ -1,0 +1,132 @@
+/* Importamos Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap');
+
+/* Creamos las variables */
+:root{
+    --Light-Cyan: #cee3e9;
+    --Neon-Green: #52ffa8;
+    --Grayish-Blue: #4f5d73;
+    --Dark-Grayish-Blue: #323a49;
+    --Dark-Blue: #1f2632;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container__info{
+    background-color: var(--Dark-Grayish-Blue);
+    text-align: center;
+    height: 335px;
+    width: 540px;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 15px 5px #000000;
+}
+.container__titulo{
+    font-size: 13px;
+    color: var(--Neon-Green);
+    letter-spacing: 3px;
+}
+.container__descripcion{
+    font-size: 30px;   
+    font-weight: 600;
+    color: var(--Light-Cyan);
+    text-shadow: 2px 2px 4px #000000;
+}
+.container__button{
+    position: relative;
+    bottom: 25px;
+    background-color: var(--Neon-Green);
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+.container__button:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 28px 4px #52FFA8;
+    transition: .4s;
+}
+.button-animation{
+    animation: dados 1s ease .5s 1 normal forwards;
+}
+.container__button img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes dados {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.attribution{
+    padding-top: 20px;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;   
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.attribution-autor{
+    color: var(--Neon-Green);
+    font-size: 15px;
+}
+.attribution-autor:hover{
+    color: var(--Light-Cyan);
+    transition: color .5s;
+}
+.attribution-company{
+    font-size: 15px;
+    color: #cee3e9;
+}
+.attribution-company:hover{
+    color: var(--Neon-Green);
+    transition: color .5s ;
+}
+.separador-mobil{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .container__info{
+        width: 330px;
+        height: 310px;
+    }
+    .container__descripcion{
+        font-size: 24px;
+    }
+    .separador-desktop{
+        display: none;
+    }
+    .separador-mobil{
+        display: block;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+</head>
+<body>
+
+  <section class="contenedor">
+
+    <!-- Informacion Card -->
+      <div class="container__info">
+        <div class="">
+          <h1 class="container__titulo">ADVICE #<span id="id"></span></h1>
+        </div>
+
+        <div>
+          <p class="container__descripcion">“<span id="descripcion"></span>”</p>
+        </div>
+
+        <div class="container__separador">
+          <img src="./images/pattern-divider-mobile.svg" class="separador-mobil" >
+          <img src="./images/pattern-divider-desktop.svg" class="separador-desktop">
+        </div>
+      </div>
+
+      <!-- Dado -->
+      
+        <button class="container__button" type="button" id="btn"><img src="./images/icon-dice.svg" id="img"></button>
+      
+
+      
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="attribution-company" target="_blank">Frontend Mentor</a>. <br>
+        Coded by <a href="https://www.facebook.com/sebastianlr26" class="attribution-autor" target="_blank">Juan Sebastian</a>.
+      </div>
+  </section>
+
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+</body>
+</html>
