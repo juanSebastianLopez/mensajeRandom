@@ -23,9 +23,11 @@ fetch('https://api.adviceslip.com/advice')
 dados();
 
 btn.addEventListener('click', (e)=>{
+    
     const temporizador = setTimeout(()=>{
         $('#id').empty();
         $('#descripcion').empty();
         dados();
-    },1500);
+        img.classList.toggle('button-animation');
+    },2000);
 })
